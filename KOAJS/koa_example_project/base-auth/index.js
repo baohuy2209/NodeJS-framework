@@ -1,6 +1,8 @@
 const Koa = require('koa'); 
 const auth = require('koa-basic-auth'); 
 const app = new Koa();
+const dotenv = require("dotenv"); 
+dotenv.config(); 
 app.use(async function(ctx, next) {
     try{
         await next();
