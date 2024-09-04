@@ -1,13 +1,16 @@
 {
   "dependencies": {
     "dotenv": "^16.4.5",
-    "koa": "^2.15.3"
+    "koa": "^2.15.3",
+    "koajs": "^1.0.0",
+    "stream": "^0.0.3",
+    "util": "^0.12.5"
   },
   "name": "stream-server-side-events",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
+    "start": "node --watch ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nguyen Bao huy",
