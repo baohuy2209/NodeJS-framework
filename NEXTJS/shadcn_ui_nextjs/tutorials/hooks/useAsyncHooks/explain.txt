@@ -1,0 +1,19 @@
+The useAsync hook takes in a callback function that performs the asynchronous operation and an optional array of dependencies. 
+It returns an object with three properties: loading, error and value.
+The loading property indicates whether the operation is currently in progress, while the error property holds any error messages encountered during the process. 
+Finally, the value property contains the resolved value of the asynchronous operation. 
+
+One of the significant advantage of useAsync is its ability to memoize the callback function using useCallback. 
+This ensures that the callback is only recreated when the dependencies change, preventing unnecessary re-renders and optimizing performance. 
+Additionally, the hook employes the useState and useEffect hooks to manage the loading state and invoke the memoized callback function when necessary.
+
+UseAsync can be employes in a wide range of scenarios. 
+Whether you're fetching data fron an API, performing computations, or handling form submissions, this custom hook simplifies the management of asynchronous operations throughout your React components. 
+Its flexibility and ease of use make it a valuable addition to any React project. 
+
+By utilizing useAsync, you can streamline your codebase, enhance reusability, and maintain a consistent and reliable user experience. 
+Give it a try in your next React project and witness the power of simplified asynchronous operations. 
+- The useAsync hook is defined with the generic T, allowing it to work with any data type that the callback returns. When you call useAsync<string> it will be understand the return value of the callback as a string 
+- loading: Boolean indicating the loading status of the async function 
+- error: String(or undefined) to store error information when the callback crashes. 
+- value: Type T (or undefined) to successfully save results from async function. 
