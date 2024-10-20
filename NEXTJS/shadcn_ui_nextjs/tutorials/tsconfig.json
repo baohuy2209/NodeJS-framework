@@ -26,7 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "hooks/useTimeoutHook/useTimeout.js"
+    "hooks/custom_hook_js/useTimeoutHook/useTimeout.js"
   ],
   "exclude": ["node_modules"]
 }
