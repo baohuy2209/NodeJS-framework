@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-expressions */
+"use client";
 import useAsync from "./useAsync";
 function AsyncComp() {
   const { loading, error, value } = useAsync(() => {
