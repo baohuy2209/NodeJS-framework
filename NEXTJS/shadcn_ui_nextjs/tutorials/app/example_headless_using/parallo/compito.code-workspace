@@ -1,0 +1,56 @@
+{
+  "folders": [
+	{
+		"path": "../../../../../../../compito"
+	},
+	{
+		"path": "../../../../../../../Firebase_learn"
+	},
+	{
+		"path": "../../../../../../../Interactive_Spider"
+	},
+	{
+		"path": "../../../../../../../Management_Project_Website"
+	},
+	{
+		"path": "../../../../../../../ML.Recommend"
+	},
+	{
+		"path": "../../../../../../../NextAuthExample"
+	},
+	{
+		"path": "../../../../../../../next-learn"
+	},
+	{
+		"path": "../../../../../.."
+	},
+	{
+		"path": "../../../../../../../notion-nextjs-mini-kit"
+	},
+	{
+		"path": "../../../../../../../project_next_14_ai_prompt_sharing"
+	},
+	{
+		"path": "../../../../../../../project_next13_car_showcase"
+	},
+	{
+		"path": "../../../../../../../Rust"
+	},
+	{
+		"path": "../../../../../../../shadcn-ui-ui"
+	},
+	{
+		"path": "../../../../../../../socket-express-mvc-structure"
+	},
+	{
+		"path": "../../../../../../../../../../../../../xampp/htdocs/firstexampleproject"
+	},
+	{
+		"path": "../../../../../../../../../../../../../xampp/htdocs/LearnPHP"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Interactive_Spider",
+    "git.ignoreLimitWarning": true
+  }
+}
