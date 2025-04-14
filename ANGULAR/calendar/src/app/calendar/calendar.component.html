@@ -1,0 +1,23 @@
+<div>
+  <header>
+     <!---- Calendar month be displayed here -->
+     <h1></h1>
+     <div>
+        <button>Today</button>
+        <button>Previous</button>
+        <button>Next</button>
+     </div>
+  </header>
+
+  <div>
+
+    <!---- Calendar days be displayed here -->
+    <header class="grid grid-cols-7">
+      @for (item of this.dayNamesEnriched; track item.dayName) {
+          <div>
+            {{ item.dayName }}
+          </div>
+      }
+    </header>
+  </div>
+</div>
