@@ -1,0 +1,11 @@
+<div class="clock">
+  <div
+    class="number"
+    *ngFor="let num of clockNumbers"
+    [style.top]="num.position.top"
+    [style.left]="num.position.left"
+  >
+    {{ num.number }}
+  </div>
+  <div className="center"></div>
+</div>
