@@ -16,7 +16,12 @@
   transform: translate(-50%, -50%);
   user-select: none;
 }
-
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: top center;
+}
 .center {
   position: absolute;
   top: 50%;
@@ -27,4 +32,20 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+.hour {
+  width: 3px;
+  height: 70px;
+  background-color: black;
+}
+
+.minute {
+  width: 2px;
+  height: 100px;
+  background-color: silver;
+}
+.second {
+  width: 2px;
+  height: 130px;
+  background-color: red;
 }
