@@ -1,0 +1,78 @@
+<div class="container">
+  <h2>Contact Form</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" autocomplete="off">
+    <div>
+      <label for="name">Name: </label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        autocomplete="off"
+        formControlName="name"
+        [class.error]="name?.touched && name?.invalid"
+      />
+      <div class="error-message">
+        <div *ngIf="name?.errors?.['required']">Name is required</div>
+        <div *ngIf="name?.errors?.['minlength']">
+          Name must have at least 3 characters
+        </div>
+      </div>
+    </div>
+    <div>
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        autocomplete="off"
+        formControlName="email"
+        [class.error]="email?.touched && email?.invalid"
+      />
+      <div class="error-message">
+        <div *ngIf="email?.errors?.['required']">Email is required</div>
+        <div *ngIf="email?.errors?.['email']">Invalid email format</div>
+      </div>
+    </div>
+    <div>
+      <label for="subject">Subject: </label>
+      <input
+        type="text"
+        id="subject"
+        placeholder="Enter subject"
+        autocomplete="off"
+        formControlName="subject"
+        [class.error]="subject?.touched && subject?.invalid"
+      />
+      <div class="error-message">
+        <div *ngIf="subject?.errors?.['required']">Subject is required</div>
+        <div *ngIf="subject?.errors?.['maxlength']">
+          Subject must have at most 50 characters
+        </div>
+      </div>
+    </div>
+    <div>
+      <label for="message">Message: </label>
+      <textarea
+        name="message"
+        id="message"
+        rows="5"
+        autocomplete="off"
+        formControlName="message"
+        [class.error]="message?.touched && message?.invalid"
+      ></textarea>
+      <div class="error-message">
+        <div *ngIf="message?.errors?.['required']">Message is required</div>
+        <div *ngIf="message?.errors?.['minlength']">
+          Message must have at least 10 characters
+        </div>
+      </div>
+    </div>
+    <button class="submit" [disabled]="contactForm">Submit</button>
+    <div class="success-message" *ngIf="submissionStatus === 'success'">
+      Your message has been successfully submitted!
+    </div>
+    <div class="error-message" *ngIf="submissionStatus === 'error'">
+      Failed to submit message. Please try again!
+    </div>
+  </form>
+</div>
